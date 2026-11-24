@@ -1,0 +1,917 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Saka Klapa</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Saka Klapa, part of PT Saka Argo Group, exports Indonesian coconut-derived products: coco fiber, coco dregs, coco palm sugar and coco shell charcoal.">
+<style>
+/* Layout concept: editorial export house. Wide olive bands against ivory paper, hairline rules, large serif headlines, asymmetric two-column compositions, product pages as spec sheets. */
+:root{
+  --bg:#F5F0E3; --bg-alt:#ECE5D2; --ink:#23241F; --muted:#66654F; --line:#D2C9AE;
+  --olive:#4A5330; --olive-deep:#363D22; --on-olive:#F3EEDD; --on-olive-muted:#C4C4A6;
+  --gold:#9C8142; --gold-on-olive:#CDB373; --btn:#4A5330; --btn-ink:#F5F0E3;
+  --err:#A23B2A; --ok:#3F6B35;
+  --display:'Newsreader',Georgia,'Times New Roman',serif;
+  --body:'Instrument Sans','Helvetica Neue',Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#13150E; --bg-alt:#1B1E14; --ink:#EDE8D8; --muted:#A9A58F; --line:#34372A;
+  --olive:#2B3219; --olive-deep:#1F2412; --on-olive:#F0EBDA; --on-olive-muted:#B9B99C;
+  --gold:#C7AE6C; --gold-on-olive:#CDB373; --btn:#D9CFA8; --btn-ink:#1B1E14;
+  --err:#E08A77; --ok:#8DB97F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#13150E; --bg-alt:#1B1E14; --ink:#EDE8D8; --muted:#A9A58F; --line:#34372A;
+  --olive:#2B3219; --olive-deep:#1F2412; --on-olive:#F0EBDA; --on-olive-muted:#B9B99C;
+  --gold:#C7AE6C; --gold-on-olive:#CDB373; --btn:#D9CFA8; --btn-ink:#1B1E14;
+  --err:#E08A77; --ok:#8DB97F; color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--bg)}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+img,svg{max-width:100%}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1240px;margin-inline:auto}
+.band{margin-inline:calc(-1 * max(16px,env(safe-area-inset-left,0px)));padding-inline:max(16px,env(safe-area-inset-left,0px))}
+.eyebrow{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.on-olive .eyebrow{color:var(--gold-on-olive)}
+.lede{font-size:clamp(1.05rem,1.4vw,1.2rem);color:var(--muted);max-width:60ch}
+.rule{border:0;border-top:1px solid var(--line);margin:0}
+
+/* header */
+.hdr{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--bg);border-bottom:1px solid var(--line)}
+.brand{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.brand b{font-family:var(--display);font-size:25px;font-weight:500;letter-spacing:.2em}
+.brand small{font-size:9.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-top:6px;font-weight:600}
+.nav{display:flex;gap:30px;align-items:center}
+.nav a{text-decoration:none;font-size:14px;letter-spacing:.04em;padding:6px 0;border-bottom:1px solid transparent;transition:border-color .25s,color .25s}
+.nav a:hover,.nav a[aria-current="page"]{border-bottom-color:var(--gold);color:var(--olive)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .nav a:hover,:root:not([data-theme="light"]) .nav a[aria-current="page"]{color:var(--gold)}}
+:root[data-theme="dark"] .nav a:hover,:root[data-theme="dark"] .nav a[aria-current="page"]{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 14px/1 var(--body);letter-spacing:.06em;text-decoration:none;padding:15px 24px;border:1px solid var(--btn);background:var(--btn);color:var(--btn-ink);cursor:pointer;transition:background .25s,color .25s,transform .25s}
+.btn:hover{transform:translateY(-1px)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.on-olive .btn{background:var(--on-olive);color:var(--olive-deep);border-color:var(--on-olive)}
+.on-olive .btn.ghost{background:transparent;color:var(--on-olive);border-color:var(--on-olive)}
+.on-olive .btn.ghost:hover{background:var(--on-olive);color:var(--olive-deep)}
+.burger{display:none;background:none;border:1px solid var(--line);width:44px;height:44px;cursor:pointer;color:var(--ink);align-items:center;justify-content:center}
+.burger span,.burger span::before,.burger span::after{display:block;width:18px;height:1.5px;background:currentColor;position:relative;content:""}
+.burger span::before{position:absolute;top:-6px}.burger span::after{position:absolute;top:6px}
+.mnav{display:none}
+@media (max-width:960px){
+  .nav{display:none}.burger{display:inline-flex}
+  .mnav{display:flex;flex-direction:column;border-top:1px solid var(--line);padding:8px 0 20px}
+  .mnav[hidden]{display:none}
+  .mnav a{padding:14px 0;border-bottom:1px solid var(--line);text-decoration:none;font-family:var(--display);font-size:22px}
+  .mnav .btn{margin-top:18px;justify-content:center;font-family:var(--body);font-size:14px;border-bottom:1px solid var(--btn)}
+}
+
+/* hero */
+.hero{position:relative;color:#F6F1E0;min-height:min(86vh,760px);display:flex;align-items:flex-end;overflow:hidden;background:#2B3219}
+.hero .photo{position:absolute;inset:0}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,24,12,.82) 0%,rgba(20,24,12,.45) 55%,rgba(20,24,12,.15) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-block:clamp(56px,10vw,120px);width:100%}
+.hero h1{font-size:clamp(2.7rem,7.2vw,6.1rem);max-width:13ch;font-weight:300}
+.hero h1 em{font-style:italic;color:#D8C27F}
+.hero p.sub{max-width:52ch;margin-top:28px;font-size:clamp(1.02rem,1.5vw,1.2rem);color:#E3DEC8}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:38px}
+.hero .btn{background:#F3EEDD;color:#2B3219;border-color:#F3EEDD}
+.hero .btn.ghost{background:transparent;color:#F3EEDD}
+.hero .btn.ghost:hover{background:#F3EEDD;color:#2B3219}
+.hero-meta{position:absolute;right:max(16px,env(safe-area-inset-right,0px));bottom:22px;z-index:2;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#D8D2B6;writing-mode:vertical-rl;display:none}
+@media (min-width:1100px){.hero-meta{display:block}}
+.rise{animation:rise .9s cubic-bezier(.2,.7,.2,1) both}
+.rise.d1{animation-delay:.12s}.rise.d2{animation-delay:.24s}.rise.d3{animation-delay:.36s}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rise{animation:none}html{scroll-behavior:auto}*{transition:none!important}}
+
+/* photo slots */
+.photo{position:relative;overflow:hidden;background:var(--olive)}
+.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.photo svg.art{position:absolute;inset:0;width:100%;height:100%}
+.photo .cap{position:absolute;left:14px;bottom:12px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(246,241,224,.72);z-index:2}
+.zoom:hover .photo img,.zoom:hover .photo svg.art{transform:scale(1.04)}
+.photo svg.art{transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+
+/* sections */
+section.s{padding-block:clamp(64px,9vw,128px)}
+.alt{background:var(--bg-alt)}
+.on-olive{background:var(--olive);color:var(--on-olive)}
+.on-olive .lede,.on-olive p.mut{color:var(--on-olive-muted)}
+.sh{display:grid;gap:18px;margin-bottom:clamp(36px,5vw,64px);max-width:760px}
+.sh h2{font-size:clamp(2rem,4.4vw,3.6rem)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);align-items:center}
+.split>*{min-width:0}
+.split.top{align-items:start}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.banner{aspect-ratio:21/9;min-height:220px}.tall{aspect-ratio:4/5}.wide{aspect-ratio:16/10}.sq{aspect-ratio:1/1}
+.intro p+p{margin-top:16px}
+.intro .big{font-family:var(--display);font-size:clamp(1.5rem,2.6vw,2.15rem);line-height:1.25;color:var(--ink)}
+.link{display:inline-flex;gap:10px;align-items:center;margin-top:26px;font-weight:600;font-size:14px;letter-spacing:.06em;text-decoration:none;border-bottom:1px solid var(--gold);padding-bottom:4px}
+.link:hover{color:var(--gold)}
+
+/* product cards */
+.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}
+.pgrid.two{grid-template-columns:repeat(2,1fr);gap:56px 40px}
+@media (max-width:1100px){.pgrid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.pgrid,.pgrid.two{grid-template-columns:1fr}}
+.pc{display:flex;flex-direction:column;gap:16px;text-decoration:none;min-width:0}
+.pc .photo{aspect-ratio:4/5}
+.pc h3{font-size:1.7rem}
+.pc .tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600}
+.pc p{color:var(--muted);font-size:15px}
+.pc .more{font-size:13px;font-weight:600;letter-spacing:.08em;border-bottom:1px solid var(--gold);align-self:flex-start;padding-bottom:3px}
+.pc:hover .more{color:var(--gold)}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:12.5px;border:1px solid var(--line);padding:5px 12px;color:var(--ink)}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--on-olive-muted)}
+.why>div{padding:30px 26px 10px 0;min-width:0}
+.why>div+div{padding-left:26px;border-left:1px solid rgba(196,196,166,.35)}
+.why h3{font-size:1.45rem;margin-bottom:12px}
+.why p{color:var(--on-olive-muted);font-size:15px}
+@media (max-width:960px){.why{grid-template-columns:1fr 1fr}.why>div:nth-child(3){border-left:0;padding-left:0}.why>div:nth-child(n+3){border-top:1px solid rgba(196,196,166,.35)}}
+@media (max-width:560px){.why{grid-template-columns:1fr}.why>div+div{padding-left:0;border-left:0;border-top:1px solid rgba(196,196,166,.35)}}
+
+/* cta band */
+.cta-band h2{font-size:clamp(2.1rem,5vw,4.2rem);max-width:16ch}
+.cta-band .row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+
+/* page header */
+.ph{padding-block:clamp(56px,8vw,112px) clamp(36px,5vw,64px)}
+.ph h1{font-size:clamp(2.6rem,6.4vw,5.4rem);font-weight:300;max-width:14ch}
+.ph .lede{margin-top:24px}
+.crumb{font-size:12.5px;letter-spacing:.08em;color:var(--muted);margin-bottom:22px}
+.crumb a{text-decoration:none;border-bottom:1px solid var(--line)}
+
+/* about */
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+.pillars>div{padding:36px 32px 36px 0;min-width:0}
+.pillars>div+div{padding-left:32px;border-left:1px solid var(--line)}
+.pillars h3{font-size:2rem;margin:10px 0 14px}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}.pillars>div+div{padding-left:0;border-left:0;border-top:1px solid var(--line)}}
+.etym{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.etym>div{border-top:1px solid var(--on-olive-muted);padding-top:18px}
+.etym b{display:block;font-family:var(--display);font-size:clamp(2.4rem,5vw,4rem);font-weight:300;line-height:1}
+.etym span{display:block;margin-top:10px;color:var(--on-olive-muted);font-size:15px}
+.vals{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.vals h3{font-size:1.5rem;margin-bottom:10px;padding-top:18px;border-top:1px solid var(--line)}
+.vals p{color:var(--muted)}
+@media (max-width:860px){.vals{grid-template-columns:1fr;gap:28px}}
+
+/* process list */
+.steps{display:grid;gap:0;border-top:1px solid var(--line)}
+.step{display:grid;grid-template-columns:200px 1fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}
+.step h3{font-size:1.5rem}
+.step p{color:var(--muted);max-width:62ch}
+@media (max-width:640px){.step{grid-template-columns:1fr;gap:8px}}
+
+/* product detail */
+.spec{border-top:1px solid var(--ink);margin-top:34px}
+.spec div{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--line)}
+.spec dt{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:600;padding-top:3px}
+.spec dd{margin:0}
+.price{font-family:var(--display);font-size:1.5rem;font-style:italic}
+.pnav{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.pnav a{text-decoration:none;font-family:var(--display);font-size:1.5rem}
+.pnav a small{display:block;font:600 11px var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
+
+/* forms */
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+.fgrid .full{grid-column:1/-1}
+@media (max-width:620px){.fgrid{grid-template-columns:1fr}}
+.fld{display:flex;flex-direction:column;gap:7px;min-width:0}
+.fld label{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--muted)}
+.fld input,.fld select,.fld textarea{font:inherit;font-size:16px;color:var(--ink);background:transparent;border:0;border-bottom:1px solid var(--ink);padding:10px 0;border-radius:0;width:100%;min-width:0}
+.fld select{appearance:none;background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 12px) 50%,calc(100% - 6px) 50%;background-size:6px 6px;background-repeat:no-repeat}
+.fld select option{color:#23241F;background:#F5F0E3}
+.fld textarea{min-height:120px;resize:vertical;border:1px solid var(--ink);padding:12px}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--gold);box-shadow:0 1px 0 var(--gold)}
+.fld .err{color:var(--err);font-size:13px}
+.fld [aria-invalid="true"]{border-color:var(--err)}
+.note{font-size:13.5px;color:var(--muted)}
+.result{border:1px solid var(--olive);padding:26px;display:grid;gap:16px}
+.result h3{font-size:1.6rem}
+.result pre{margin:0;white-space:pre-wrap;word-break:break-word;font:14px/1.6 var(--body);background:var(--bg-alt);padding:16px;max-height:260px;overflow:auto}
+.result .row{display:flex;gap:12px;flex-wrap:wrap}
+.status{font-size:13px;color:var(--ok)}
+.contact-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.contact-list>div{padding:22px 0;border-bottom:1px solid var(--line);min-width:0}
+.contact-list small{display:block;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:6px}
+.contact-list .v{font-family:var(--display);font-size:clamp(1.3rem,2.4vw,1.8rem);overflow-wrap:anywhere}
+.cbtn{margin-top:10px;background:none;border:0;border-bottom:1px solid var(--gold);font:600 12.5px var(--body);letter-spacing:.08em;color:var(--ink);cursor:pointer;padding:0 0 3px;margin-right:18px;text-decoration:none;display:inline-block}
+
+/* footer */
+.ftr{background:var(--olive-deep);color:var(--on-olive);margin-top:0}
+.ftr .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:40px;padding-block:72px 40px}
+.ftr .grid>*{min-width:0}
+.ftr h4{font:600 11.5px var(--body);letter-spacing:.22em;text-transform:uppercase;color:var(--gold-on-olive);margin-bottom:16px}
+.ftr a{text-decoration:none;display:block;padding:4px 0;color:var(--on-olive-muted)}
+.ftr a:hover{color:var(--on-olive)}
+.ftr .brand b{font-size:27px}
+.ftr p{color:var(--on-olive-muted);font-size:15px;max-width:34ch}
+.ftr .tagline{font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--on-olive);margin-top:18px}
+.ftr .legal{border-top:1px solid rgba(196,196,166,.3);padding-block:22px;font-size:13px;color:var(--on-olive-muted);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:900px){.ftr .grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.ftr .grid{grid-template-columns:1fr}}
+
+/* image slots + manager */
+.slot{position:relative;background:var(--bg-alt);border:1px solid var(--line);overflow:hidden;width:100%}
+.slot.land{aspect-ratio:4/3}.slot.lbl{aspect-ratio:2/1;background:var(--bg)}
+.slot img{position:absolute;inset:0;width:100%;height:100%;display:block;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.slot.cover img{object-fit:cover}.slot.contain img{object-fit:contain}
+.zoom:hover .slot img{transform:scale(1.03)}
+.slot-empty{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:18px;color:var(--muted);font-size:13px}
+.slot.lbl .slot-empty{flex-direction:row;flex-wrap:wrap;gap:4px 14px;padding:10px 14px}
+.slot-empty b{font:400 1.2rem var(--display);color:var(--ink)}
+.slot.drag{outline:2px dashed var(--gold);outline-offset:-6px}
+.zoombtn{position:absolute;inset:0;background:none;border:0;padding:0;cursor:zoom-in}
+.zoomhint{position:absolute;right:10px;bottom:10px;background:var(--bg);color:var(--ink);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:6px 10px;border:1px solid var(--line);pointer-events:none}
+.slotwrap{min-width:0}
+.slotlabel{font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:10px;display:block}
+.ctrl{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-top:12px}
+.sbtn{font:600 12.5px var(--body);letter-spacing:.06em;padding:10px 14px;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer}
+.sbtn:hover{background:var(--ink);color:var(--bg)}
+.sbtn.pri{background:var(--btn);border-color:var(--btn);color:var(--btn-ink)}
+.sbtn.pri:hover{opacity:.9;background:var(--btn);color:var(--btn-ink)}
+.sbtn[disabled]{opacity:.4;cursor:not-allowed}
+.sbtn[disabled]:hover{background:transparent;color:var(--ink)}
+.fname{font-size:12.5px;color:var(--muted);overflow-wrap:anywhere}
+.slot-err{color:var(--err);font-size:13px;margin-top:8px}
+.mbar{border:1px solid var(--line);background:var(--bg-alt);padding:16px 20px;display:grid;gap:10px;margin-bottom:36px}
+.mbar .top{display:flex;justify-content:space-between;gap:14px;align-items:center;flex-wrap:wrap}
+.mbar p{font-size:14px;color:var(--muted);max-width:80ch}
+.mbar details{font-size:14px;color:var(--muted)}
+.mbar summary{cursor:pointer;color:var(--ink);font-weight:600}
+.mbar ol{margin:10px 0 0;padding-left:20px;display:grid;gap:6px;max-width:80ch}
+.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px 40px}
+.mgrid>*{min-width:0}
+.mrow{display:grid;grid-template-columns:1fr;gap:26px}
+.mrow>*{min-width:0}
+@media (max-width:900px){.mgrid{grid-template-columns:1fr}}
+
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,16,9,.94);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:max(20px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lb img{max-width:100%;max-height:calc(100% - 60px);object-fit:contain;background:#fff}
+.lb .bar{display:flex;gap:16px;align-items:center;color:#EDE8D8;font-size:14px;width:100%;justify-content:space-between;max-width:1100px}
+.lb .x{background:#EDE8D8;color:#1B1E14;border:0;font:600 13px var(--body);letter-spacing:.08em;padding:11px 18px;cursor:pointer}
+.pack{display:grid;grid-template-columns:1fr;gap:clamp(24px,4vw,44px)}
+.pack>*{min-width:0}
+
+</style>
+
+<div id="root"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.3.1/umd/react.production.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.3.1/umd/react-dom.production.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/htm@3.1.1/dist/htm.umd.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap">
+<script>
+const {useState,useEffect,useRef} = React;
+const html = htm.bind(React.createElement);
+
+/* ---------- Company facts (from the brief) ---------- */
+const CO = {
+  brand:'SAKA KLAPA', parent:'PT Saka Argo Group', tagline:'Coconut Builds Strength.',
+  email:'sakaargoresources@gmail.com', waDisplay:'+62 896 4356 6259', waNumber:'6289643566259',
+  location:'West Bekasi, Bekasi City, Indonesia'
+};
+
+/* Default photography is stored in the adjacent assets folder. Admin uploads can override product photos in this browser. */
+const IMAGES = {
+  hero:'assets/hero.webp',
+  intro:'assets/intro.webp',
+  plantation:'assets/plantation.webp',
+  sourcing:'assets/sourcing.webp',
+  sourcingB:'assets/sourcingB.webp',
+  quality:'assets/quality.webp',
+  about:'assets/about.webp',
+  aboutB:'assets/aboutB.webp',
+  contact:''
+};
+
+const PRODUCT_IMAGES = {
+  'coco-fiber':'assets/coco-fiber.webp',
+  'coco-dregs':'assets/coco-dregs.webp',
+  'coco-palm-sugar':'assets/coco-palm-sugar.webp',
+  'coco-shell-charcoal':'assets/coco-shell-charcoal.webp'
+};
+
+const PRODUCTS = [
+  {slug:'coco-fiber', name:'Coco Fiber', kind:'fiber', tag:'From the husk',
+    short:'Natural fiber from the coconut husk, supplied for growing, landscaping and industrial use.',
+    long:'Coco fiber is the natural fibrous material taken from the husk of the coconut. It is valued for its structure and its natural origin, and it is used wherever a durable plant-based fiber is needed.',
+    apps:['Horticulture','Gardening','Erosion control','Industrial applications'],
+    ingredients:'Natural coconut husk fiber'},
+  {slug:'coco-dregs', name:'Coco Dregs', kind:'dregs', tag:'From the pulp',
+    short:'Natural coconut pulp residue, a versatile raw material for feed, soil and food processing.',
+    long:'Coco dregs are the natural pulp residue that remains from the coconut. Buyers use this material as an input for feed, soil and food processing, as well as in other industrial settings.',
+    apps:['Animal feed','Organic fertilizer','Food processing','Industrial applications'],
+    ingredients:'Natural coconut pulp residue'},
+  {slug:'coco-palm-sugar', name:'Coco Palm Sugar', kind:'sugar', tag:'From the sap',
+    short:'Natural coconut palm sap sugar with no artificial additives, for kitchens and food manufacturers.',
+    long:'Coco palm sugar is made from natural coconut palm sap, with no artificial additives. It is supplied for cooking, baking and beverages, and for the wider food and beverage industry.',
+    apps:['Cooking','Baking','Beverages','Food and beverage industries'],
+    ingredients:'Natural coconut palm sap, no artificial additives'},
+  {slug:'coco-shell-charcoal', name:'Coco Shell Charcoal', kind:'charcoal', tag:'From the shell',
+    short:'Natural charcoal made from coconut shell, for grilling, shisha, heating and industry.',
+    long:'Coco shell charcoal is made from natural coconut shell. It is supplied for grilling and barbecue, shisha and heating, and for industrial applications.',
+    apps:['Grilling','Barbecue','Shisha','Heating','Industrial applications'],
+    ingredients:'Natural coconut shell'}
+];
+
+const NAV = [['home','Home'],['about','About Us'],['products','Products'],['sourcing','Our Sourcing'],['quality','Quality'],['contact','Contact']];
+
+
+/* ---------- Image store ----------
+   ImageStore is the only place that knows where images live. Each image is keyed "<product-slug>:<kind>"
+   with kind = "product" or "label", so a product's photo and its barcode/label image can never be mixed up.
+   This version keeps files in this browser (IndexedDB). To make images permanent for every visitor,
+   replace put/remove/init with calls to your storage service (see the notes in the Image manager panel). */
+const ALLOWED_TYPES=['image/jpeg','image/png','image/webp'];
+const ALLOWED_EXT=/\.(jpe?g|png|webp)$/i;
+const MAX_BYTES=10*1024*1024;
+const ImageStore={
+  state:{urls:{},names:{},manage:true,persist:'pending'},
+  subs:new Set(), db:null,
+  subscribe(f){ImageStore.subs.add(f);return()=>ImageStore.subs.delete(f);},
+  snapshot(){return ImageStore.state;},
+  set(patch){ImageStore.state={...ImageStore.state,...patch};ImageStore.subs.forEach(f=>f());},
+  idb(){return new Promise((res,rej)=>{try{const r=indexedDB.open('saka-klapa-images',1);r.onupgradeneeded=()=>r.result.createObjectStore('images');r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);}catch(e){rej(e);}});},
+  async init(){
+    try{
+      ImageStore.db=await ImageStore.idb();
+      const tx=ImageStore.db.transaction('images','readonly'), st=tx.objectStore('images');
+      const keys=await new Promise((res,rej)=>{const q=st.getAllKeys();q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error);});
+      const vals=await new Promise((res,rej)=>{const q=st.getAll();q.onsuccess=()=>res(q.result);q.onerror=()=>rej(q.error);});
+      const urls={},names={};
+      keys.forEach((k,i)=>{const r=vals[i]; if(r&&r.blob){urls[k]=URL.createObjectURL(r.blob);names[k]=r.name||'';}});
+      ImageStore.set({urls,names,persist:'browser'});
+    }catch(e){ImageStore.db=null;ImageStore.set({persist:'memory'});}
+  },
+  check(file){
+    if(!file) return 'No file selected.';
+    const okType=ALLOWED_TYPES.includes(file.type)||(!file.type&&ALLOWED_EXT.test(file.name));
+    if(!okType||!ALLOWED_EXT.test(file.name)) return 'Unsupported file. Please use a JPG, JPEG, PNG or WebP image.';
+    if(file.size>MAX_BYTES) return 'This file is larger than 10 MB. Please upload a smaller image.';
+    return '';
+  },
+  decodes(file){return new Promise(res=>{const u=URL.createObjectURL(file),im=new Image();im.onload=()=>{URL.revokeObjectURL(u);res(true);};im.onerror=()=>{URL.revokeObjectURL(u);res(false);};im.src=u;});},
+  async put(key,file){
+    const bad=ImageStore.check(file); if(bad) return bad;
+    if(!(await ImageStore.decodes(file))) return 'This file could not be read as an image. Please try another file.';
+    const old=ImageStore.state.urls[key]; if(old) URL.revokeObjectURL(old);
+    if(ImageStore.db){ try{ await new Promise((res,rej)=>{const tx=ImageStore.db.transaction('images','readwrite');tx.objectStore('images').put({blob:file,name:file.name,type:file.type,updated:Date.now()},key);tx.oncomplete=res;tx.onerror=()=>rej(tx.error);}); }catch(e){ ImageStore.set({persist:'memory'}); } }
+    ImageStore.set({urls:{...ImageStore.state.urls,[key]:URL.createObjectURL(file)},names:{...ImageStore.state.names,[key]:file.name}});
+    return '';
+  },
+  async remove(key){
+    const old=ImageStore.state.urls[key]; if(old) URL.revokeObjectURL(old);
+    if(ImageStore.db){ try{ await new Promise((res,rej)=>{const tx=ImageStore.db.transaction('images','readwrite');tx.objectStore('images').delete(key);tx.oncomplete=res;tx.onerror=()=>rej(tx.error);}); }catch(e){} }
+    const urls={...ImageStore.state.urls},names={...ImageStore.state.names}; delete urls[key]; delete names[key];
+    ImageStore.set({urls,names});
+  }
+};
+ImageStore.init();
+function useImages(){return React.useSyncExternalStore(ImageStore.subscribe,ImageStore.snapshot);}
+const ZoomCtx=React.createContext(()=>{});
+
+const KIND_LABEL={product:'Product image',label:'Barcode / label image'};
+function ImageSlot({pid,name,kind,frame='tall',fit='cover',controls=false,zoomable=false}){
+  const {urls,names}=useImages(); const zoom=React.useContext(ZoomCtx);
+  const key=pid+':'+kind, uploaded=urls[key], src=uploaded || (kind==='product' ? PRODUCT_IMAGES[pid] : 'assets/sample-barcode.webp'), id='up-'+pid+'-'+kind;
+  const [err,setErr]=useState(''), [drag,setDrag]=useState(false), [busy,setBusy]=useState(false);
+  const alt = kind==='product' ? name+' product photograph' : name+' barcode and packaging label';
+  async function pick(f){ setErr(''); setBusy(true); const r=await ImageStore.put(key,f); setBusy(false); if(r) setErr(r); }
+  const dz = controls ? {
+    onDragOver:e=>{e.preventDefault();setDrag(true);}, onDragLeave:()=>setDrag(false),
+    onDrop:e=>{e.preventDefault();setDrag(false);const f=e.dataTransfer.files&&e.dataTransfer.files[0];if(f)pick(f);}
+  } : {};
+  return html`<div className="slotwrap">
+    <div className=${'slot '+frame+' '+fit+(drag?' drag':'')} ...${dz}>
+      ${src ? html`<img src=${src} alt=${alt} decoding="async"/>` : html`<div className="slot-empty"><b>${KIND_LABEL[kind]}</b><span>${name}</span>${controls?html`<span>Drop a file here or use Upload</span>`:null}</div>`}
+      ${src && zoomable ? html`<button type="button" className="zoombtn" aria-label=${'Enlarge '+alt} onClick=${()=>zoom({src,title:alt})}></button><span className="zoomhint">Click to enlarge</span>` : null}
+    </div>
+    ${controls ? html`<div className="ctrl">
+      <input id=${id} type="file" accept=".jpg,.jpeg,.png,.webp,image/jpeg,image/png,image/webp" hidden onChange=${e=>{const f=e.target.files&&e.target.files[0]; e.target.value=''; if(f) pick(f);}}/>
+      <button type="button" className="sbtn pri" disabled=${busy} onClick=${()=>document.getElementById(id).click()}>${src?'Replace':'Upload'} ${kind==='product'?'photo':'label'}</button>
+      <button type="button" className="sbtn" disabled=${!uploaded} onClick=${()=>{setErr('');ImageStore.remove(key);}}>Remove</button>
+      ${src && names[key] ? html`<span className="fname">${names[key]}</span>`:null}
+    </div>` : null}
+    ${err ? html`<div className="slot-err" role="alert">${err}</div>` : null}
+  </div>`;
+}
+
+function ManageBar(){
+  const {manage,persist}=useImages();
+  const msg = persist==='browser' ? 'Uploaded images are saved in this browser only. Other visitors to the live website will not see them yet.'
+    : persist==='memory' ? 'This browser blocks local storage, so uploaded images last only until you leave or refresh this page. Other visitors will not see them.'
+    : 'Checking this browser for saved images…';
+  return html`<div className="mbar">
+    <div className="top"><strong>Image manager</strong>
+      <button type="button" className="sbtn" aria-pressed=${manage} onClick=${()=>ImageStore.set({manage:!manage})}>${manage?'Hide upload controls':'Show upload controls'}</button></div>
+    <p>${msg} Each product has one product photograph and one barcode / label image, stored separately under the product’s own name.</p>
+    <details><summary>How to make uploads permanent</summary>
+      <ol>
+        <li><b>Storage:</b> choose a place for the files, such as Amazon S3, Cloudflare R2, Cloudinary or Supabase Storage.</li>
+        <li><b>Database:</b> add a table, for example <code>product_images</code>, with product, kind (<code>product</code> or <code>label</code>), file URL and updated date. One row per product and kind keeps each barcode image tied to its product.</li>
+        <li><b>Upload service:</b> a small server endpoint, protected by an admin login, that checks the file type and size and saves the file and its row.</li>
+        <li><b>Connect the site:</b> replace the <code>init</code>, <code>put</code> and <code>remove</code> functions of <code>ImageStore</code> in the code with calls to that endpoint. The rest of the website does not need to change.</li>
+        <li><b>Security:</b> in the live site, show the upload controls only to a signed-in administrator.</li>
+      </ol></details>
+  </div>`;
+}
+
+function Lightbox({item,onClose}){
+  const ref=useRef(null);
+  useEffect(()=>{
+    if(!item) return;
+    const prev=document.activeElement; if(ref.current) ref.current.focus();
+    const k=e=>{if(e.key==='Escape') onClose();}; window.addEventListener('keydown',k);
+    return ()=>{window.removeEventListener('keydown',k); if(prev&&prev.focus) prev.focus();};
+  },[item]);
+  if(!item) return null;
+  return html`<div className="lb" role="dialog" aria-modal="true" aria-label=${item.title} onClick=${onClose}>
+    <div className="bar" onClick=${e=>e.stopPropagation()}><span>${item.title}</span><button ref=${ref} type="button" className="x" onClick=${onClose}>Close</button></div>
+    <img src=${item.src} alt=${item.title} onClick=${e=>e.stopPropagation()}/>
+  </div>`;
+}
+
+/* ---------- Art-directed tonal placeholders (replaced by IMAGES when provided) ---------- */
+const TONES = {
+  hero:['#2A3118','#566033'], plantation:['#323B1D','#6B7A3F'], sourcing:['#3A3F20','#7C8247'], sourcingB:['#4B3B22','#8C7243'],
+  quality:['#2E3520','#5E6A3A'], intro:['#4A3A22','#8F7544'], about:['#35401F','#6F7C41'], aboutB:['#4B3A24','#8D7445'], contact:['#2E351C','#5C6837'],
+  fiber:['#5A4326','#A0814C'], dregs:['#6A5A3A','#B9A57A'], sugar:['#5C3A1B','#B07B3A'], charcoal:['#161714','#43453D']
+};
+const PATTERN = {fiber:'lines', dregs:'dots', sugar:'rings', charcoal:'facets', hero:'fronds', plantation:'fronds', sourcing:'lines', sourcingB:'rings', quality:'lines', intro:'rings', about:'fronds', aboutB:'dots', contact:'lines'};
+
+function Art({id}){
+  const t = TONES[id]||TONES.hero, p = PATTERN[id]||'lines', gid='g-'+id, pid='p-'+id;
+  let pat;
+  if(p==='lines') pat = html`<pattern id=${pid} width="9" height="400" patternUnits="userSpaceOnUse" patternTransform="rotate(12)"><rect width="1.2" height="400" fill="#fff" opacity=".10"/></pattern>`;
+  else if(p==='dots') pat = html`<pattern id=${pid} width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.6" fill="#fff" opacity=".16"/><circle cx="10" cy="10" r="1.1" fill="#000" opacity=".16"/></pattern>`;
+  else if(p==='rings') pat = html`<pattern id=${pid} width="120" height="120" patternUnits="userSpaceOnUse"><circle cx="60" cy="60" r="52" fill="none" stroke="#fff" stroke-width="1" opacity=".10"/><circle cx="60" cy="60" r="34" fill="none" stroke="#fff" stroke-width="1" opacity=".09"/><circle cx="60" cy="60" r="16" fill="none" stroke="#fff" stroke-width="1" opacity=".08"/></pattern>`;
+  else if(p==='facets') pat = html`<pattern id=${pid} width="60" height="60" patternUnits="userSpaceOnUse"><path d="M0 60 L30 0 L60 60 Z" fill="#fff" opacity=".035"/><path d="M0 0 L30 60 L60 0 Z" fill="#000" opacity=".12"/></pattern>`;
+  else pat = html`<pattern id=${pid} width="160" height="160" patternUnits="userSpaceOnUse"><path d="M0 160 Q60 60 160 0" fill="none" stroke="#fff" stroke-width="1.2" opacity=".10"/><path d="M0 120 Q50 50 120 0" fill="none" stroke="#fff" stroke-width="1" opacity=".08"/><path d="M40 160 Q100 90 160 40" fill="none" stroke="#fff" stroke-width="1" opacity=".08"/></pattern>`;
+  return html`<svg className="art" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+    <defs><linearGradient id=${gid} x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color=${t[0]}/><stop offset="1" stop-color=${t[1]}/></linearGradient>${pat}</defs>
+    <rect width="100" height="100" fill=${'url(#'+gid+')'}/>
+    <rect width="100" height="100" fill=${'url(#'+pid+')'}/>
+  </svg>`;
+}
+
+function Photo({id, alt, cap, className=''}){
+  const src = IMAGES[id];
+  return html`<div className=${'photo '+className} role="img" aria-label=${alt}>
+    ${src ? html`<img src=${src} alt="" loading="lazy" decoding="async"/>` : html`<${Art} id=${id}/>`}
+    ${cap && !src ? html`<span className="cap">${cap}</span>` : null}
+  </div>`;
+}
+
+/* ---------- Routing ---------- */
+const VALID = ['home','about','products','sourcing','quality','contact','quote', ...PRODUCTS.map(p=>'products-'+p.slug)];
+function parse(){ const h=(location.hash||'').replace('#',''); return VALID.includes(h)?h:'home'; }
+let PREFILL='';
+function inquire(name){ PREFILL=name||''; location.hash='quote'; }
+
+const META = {
+  home:['Saka Klapa | Indonesian Coconut-Derived Products','Saka Klapa, part of PT Saka Argo Group, exports Indonesian coconut-derived products: coco fiber, coco dregs, coco palm sugar and coco shell charcoal.'],
+  about:['About Us | Saka Klapa','Saka means pillar and Klapa means coconut in Javanese. Learn about Saka Klapa and PT Saka Argo Group, connecting Indonesian producers with buyers worldwide.'],
+  products:['Our Products | Saka Klapa','Coco fiber, coco dregs, coco palm sugar and coco shell charcoal from Indonesia. Price upon request.'],
+  sourcing:['Our Sourcing | Saka Klapa','How Saka Klapa works with local Indonesian coconut producers to bring coconut-derived products to international buyers.'],
+  quality:['Quality Assurance | Saka Klapa','Saka Klapa is committed to carefully selected coconut-derived products and consistent quality.'],
+  contact:['Contact Us | Saka Klapa','Contact Saka Klapa in West Bekasi, Indonesia by WhatsApp, email or business inquiry form.'],
+  quote:['Request a Quote | Saka Klapa','Send a B2B inquiry to Saka Klapa for coco fiber, coco dregs, coco palm sugar or coco shell charcoal.']
+};
+
+/* ---------- Shared pieces ---------- */
+function Arrow(){return html`<span aria-hidden="true">→</span>`}
+
+function Header({route}){
+  const [open,setOpen]=useState(false);
+  useEffect(()=>setOpen(false),[route]);
+  const cur = r => (r===route || (r==='products' && route.startsWith('products-')));
+  return html`<header className="hdr"><div className="wrap">
+    <div style=${{display:'flex',alignItems:'center',justifyContent:'space-between',width:'100%',height:72,gap:16}}>
+      <a className="brand" href="#home" aria-label="Saka Klapa home"><b>SAKA KLAPA</b><small>PT Saka Argo Group</small></a>
+      <nav className="nav" aria-label="Main">
+        ${NAV.map(([r,l])=>html`<a key=${r} href=${'#'+r} aria-current=${cur(r)?'page':undefined}>${l}</a>`)}
+        <a className="btn" href="#quote" style=${{padding:'12px 18px',color:'var(--btn-ink)'}}>Request a Quote</a>
+      </nav>
+      <button className="burger" aria-label=${open?'Close menu':'Open menu'} aria-expanded=${open} aria-controls="mnav" onClick=${()=>setOpen(!open)}><span></span></button>
+    </div>
+    <nav id="mnav" className="mnav" hidden=${!open} aria-label="Mobile">
+      ${NAV.map(([r,l])=>html`<a key=${r} href=${'#'+r} aria-current=${cur(r)?'page':undefined}>${l}</a>`)}
+      <a className="btn" href="#quote">Request a Quote</a>
+    </nav>
+  </div></header>`;
+}
+
+function Footer(){
+  return html`<footer className="ftr band"><div className="wrap">
+    <div className="grid">
+      <div><a className="brand" href="#home" style=${{padding:0}}><b>SAKA KLAPA</b><small style=${{color:'var(--gold-on-olive)'}}>PT Saka Argo Group</small></a>
+        <p className="tagline">${CO.tagline}</p></div>
+      <div><h4>Company</h4>${NAV.slice(0,2).concat(NAV.slice(3,5)).map(([r,l])=>html`<a key=${r} href=${'#'+r}>${l}</a>`)}</div>
+      <div><h4>Products</h4>${PRODUCTS.map(p=>html`<a key=${p.slug} href=${'#products-'+p.slug}>${p.name}</a>`)}</div>
+      <div><h4>Contact</h4>
+        <a href=${'https://wa.me/'+CO.waNumber} target="_blank" rel="noopener">WhatsApp ${CO.waDisplay}</a>
+        <a href=${'mailto:'+CO.email}>${CO.email}</a>
+        <span style=${{display:'block',padding:'4px 0',color:'var(--on-olive-muted)'}}>${CO.location}</span>
+        <a href="#quote">Request a Quote</a></div>
+    </div>
+    <div className="legal"><span>© ${new Date().getFullYear()} ${CO.brand}, ${CO.parent}. All rights reserved.</span><span>Indonesian coconut-derived products</span></div>
+  </div></footer>`;
+}
+
+function Head({eyebrow,title,children}){
+  return html`<div className="sh"><span className="eyebrow">${eyebrow}</span><h2>${title}</h2>${children}</div>`;
+}
+
+function ProductCard({p}){
+  return html`<a className="pc zoom" href=${'#products-'+p.slug} aria-label=${'View '+p.name}>
+    <${ImageSlot} pid=${p.slug} name=${p.name} kind="product" frame="land" fit="cover"/>
+    <span className="tag">${p.tag}</span>
+    <h3>${p.name}</h3>
+    <p>${p.short}</p>
+    <span className="more">View details →</span>
+  </a>`;
+}
+
+function CtaBand({title='Let us know what you need.', text='Tell us which product you are interested in and your estimated quantity. We will come back to you with the details.'}){
+  return html`<section className="s on-olive band cta-band"><div className="wrap">
+    <span className="eyebrow">Partner with us</span>
+    <h2 style=${{marginTop:18}}>${title}</h2>
+    <p className="lede" style=${{marginTop:22}}>${text}</p>
+    <div className="row"><a className="btn" href="#quote">Request a Quote <${Arrow}/></a>
+      <a className="btn ghost" href=${'https://wa.me/'+CO.waNumber} target="_blank" rel="noopener">WhatsApp ${CO.waDisplay}</a></div>
+  </div></section>`;
+}
+
+/* ---------- Inquiry form ---------- */
+const COUNTRIES_NOTE = 'Country';
+function InquiryForm({idp, compact}){
+  const blank={name:'',company:'',email:'',country:'',product:PREFILL||'',quantity:'',message:''};
+  const [v,setV]=useState(blank), [errs,setErrs]=useState({}), [done,setDone]=useState(null), [copied,setCopied]=useState('');
+  useEffect(()=>{ if(PREFILL){ setV(x=>({...x,product:PREFILL})); PREFILL=''; } },[]);
+  const set = k => e => { setV({...v,[k]:e.target.value}); if(errs[k]) setErrs({...errs,[k]:''}); };
+  function validate(x){
+    const e={};
+    if(x.name.trim().length<2) e.name='Please enter your full name.';
+    if(x.company.trim().length<2) e.company='Please enter your company name.';
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(x.email.trim())) e.email='Please enter a valid business email, for example name@company.com.';
+    if(x.country.trim().length<2) e.country='Please enter your country.';
+    if(!x.product) e.product='Please choose a product.';
+    if(x.quantity.trim().length<1) e.quantity='Please give an estimated quantity, for example 5 tonnes.';
+    return e;
+  }
+  function submit(ev){
+    ev.preventDefault();
+    const e=validate(v); setErrs(e);
+    if(Object.keys(e).length){ const first=Object.keys(e)[0]; const el=document.getElementById(idp+'-'+first); if(el) el.focus(); return; }
+    const text=['New business inquiry for Saka Klapa','',
+      'Name: '+v.name.trim(),'Company: '+v.company.trim(),'Email: '+v.email.trim(),'Country: '+v.country.trim(),
+      'Product of interest: '+v.product,'Estimated order quantity: '+v.quantity.trim(),'',
+      'Message:',(v.message.trim()||'(none)')].join('\n');
+    setDone({text, subject:'Business inquiry: '+v.product+' ('+v.company.trim()+')'});
+  }
+  async function copy(){
+    try{ await navigator.clipboard.writeText(done.text); setCopied('Copied to clipboard.'); }
+    catch(e){ const el=document.getElementById(idp+'-out'); if(el){ const r=document.createRange(); r.selectNodeContents(el); const s=getSelection(); s.removeAllRanges(); s.addRange(r);} setCopied('Text selected. Copy it with your keyboard.'); }
+  }
+  if(done){
+    const wa='https://wa.me/'+CO.waNumber+'?text='+encodeURIComponent(done.text);
+    const mail='mailto:'+CO.email+'?subject='+encodeURIComponent(done.subject)+'&body='+encodeURIComponent(done.text);
+    return html`<div className="result" role="status">
+      <h3>Your inquiry is ready, but it has not been sent yet.</h3>
+      <p className="note">This website does not store inquiries. Choose how to send it to Saka Klapa: WhatsApp opens a chat with the message filled in, or email it to ${CO.email}. If the email button does nothing in your browser, copy the text and send it from your own mail app.</p>
+      <pre id=${idp+'-out'}>${done.text}</pre>
+      <div className="row">
+        <a className="btn" href=${wa} target="_blank" rel="noopener">Send via WhatsApp</a>
+        <a className="btn ghost" href=${mail}>Open in email app</a>
+        <button type="button" className="btn ghost" onClick=${copy}>Copy text</button>
+      </div>
+      ${copied?html`<span className="status">${copied}</span>`:null}
+      <button type="button" className="cbtn" style=${{justifySelf:'start'}} onClick=${()=>{setDone(null);setCopied('');}}>Edit inquiry</button>
+    </div>`;
+  }
+  const F=(k,label,node,full)=>html`<div className=${'fld'+(full?' full':'')}><label htmlFor=${idp+'-'+k}>${label}</label>${node}${errs[k]?html`<span className="err" id=${idp+'-'+k+'-e'} role="alert">${errs[k]}</span>`:null}</div>`;
+  const ia = k => ({id:idp+'-'+k, value:v[k], onChange:set(k), 'aria-invalid':errs[k]?'true':'false', 'aria-describedby':errs[k]?idp+'-'+k+'-e':undefined});
+  return html`<form onSubmit=${submit} noValidate>
+    <div className="fgrid">
+      ${F('name','Full name',html`<input ...${ia('name')} autoComplete="name"/>`)}
+      ${F('company','Company name',html`<input ...${ia('company')} autoComplete="organization"/>`)}
+      ${F('email','Business email',html`<input type="email" ...${ia('email')} autoComplete="email"/>`)}
+      ${F('country','Country',html`<input ...${ia('country')} autoComplete="country-name"/>`)}
+      ${F('product','Product of interest',html`<select ...${ia('product')}><option value="">Select a product</option>${PRODUCTS.map(p=>html`<option key=${p.slug} value=${p.name}>${p.name}</option>`)}<option value="Multiple products">Multiple products</option></select>`)}
+      ${F('quantity','Estimated order quantity',html`<input ...${ia('quantity')} placeholder="e.g. 5 tonnes"/>`)}
+      ${F('message','Message (optional)',html`<textarea ...${ia('message')} placeholder="Tell us about your requirements, packaging or delivery needs."></textarea>`,true)}
+      <div className="full" style=${{display:'flex',gap:18,alignItems:'center',flexWrap:'wrap'}}>
+        <button className="btn" type="submit">Submit inquiry <${Arrow}/></button>
+        <span className="note">Submitting prepares your inquiry. You then send it by WhatsApp or email.</span>
+      </div>
+    </div>
+  </form>`;
+}
+
+/* ---------- Pages ---------- */
+function Home(){
+  return html`<main>
+    <section className="hero band">
+      <${Photo} id="hero" alt="Coconut plantation in Indonesia" cap="Coconut plantation, Indonesia"/>
+      <div className="wrap">
+        <span className="eyebrow rise" style=${{color:'#D8C27F'}}>Saka Klapa · PT Saka Argo Group</span>
+        <h1 className="rise d1" style=${{marginTop:20}}>Nature’s Resources. <em>Indonesia’s Finest.</em></h1>
+        <p className="sub rise d2">Indonesian coconut-derived products, from coco fiber and coco dregs to coco palm sugar and coco shell charcoal, supplied to buyers around the world.</p>
+        <div className="cta rise d3"><a className="btn" href="#products">Explore Our Products <${Arrow}/></a><a className="btn ghost" href="#quote">Partner With Us</a></div>
+      </div>
+      <span className="hero-meta">Coconut Builds Strength.</span>
+    </section>
+
+    <section className="s"><div className="wrap split">
+      <div className="intro">
+        <span className="eyebrow">The company</span>
+        <h2 style=${{fontSize:'clamp(2rem,4.2vw,3.4rem)',margin:'18px 0 26px'}}>One coconut palm. Four natural products.</h2>
+        <p className="big">Saka Klapa connects local Indonesian producers with buyers worldwide.</p>
+        <p style=${{marginTop:18,color:'var(--muted)'}}>Part of PT Saka Argo Group and based in West Bekasi, we offer products made from the husk, pulp, sap and shell of the coconut. Each one is natural in origin and made in Indonesia.</p>
+        <a className="link" href="#about">About Saka Klapa <${Arrow}/></a>
+      </div>
+      <${Photo} id="intro" className="tall zoom" alt="Coconut raw materials" cap="Raw coconut materials"/>
+    </div></section>
+
+    <section className="s alt band"><div className="wrap">
+      <${Head} eyebrow="Featured products" title="The coconut range">
+        <p className="lede">Four coconut-derived products for horticulture, food, feed, fuel and industry. Pricing is shared on request.</p>
+      <//>
+      <div className="pgrid">${PRODUCTS.map(p=>html`<${ProductCard} key=${p.slug} p=${p}/>`)}</div>
+      <a className="link" href="#products">View the full catalogue <${Arrow}/></a>
+    </div></section>
+
+    <section className="s on-olive band"><div className="wrap">
+      <${Head} eyebrow="Why choose Saka Klapa" title="A straightforward partner for coconut-derived products"/>
+      <div className="why">
+        <div><h3>Entirely coconut</h3><p>Every product in our range comes from the coconut: its husk, pulp, sap or shell.</p></div>
+        <div><h3>Rooted in Indonesia</h3><p>Our products originate in Indonesia, and we work with local Indonesian producers.</p></div>
+        <div><h3>Natural by nature</h3><p>Our coco palm sugar is made from natural coconut palm sap with no artificial additives.</p></div>
+        <div><h3>Direct contact</h3><p>Reach the team directly by WhatsApp or email and tell us what your business needs.</p></div>
+      </div>
+    </div></section>
+
+    <section className="s"><div className="wrap">
+      <div className="split">
+        <${Photo} id="sourcing" className="wide zoom" alt="Coconut palms" cap="From palm to product"/>
+        <div><span className="eyebrow">Sourcing</span>
+          <h2 style=${{fontSize:'clamp(1.9rem,3.8vw,3rem)',margin:'16px 0 20px'}}>Working with local producers</h2>
+          <p className="lede">We bring coconut-derived products from Indonesian producers to international buyers, with care taken over what we select.</p>
+          <a className="link" href="#sourcing">Our sourcing <${Arrow}/></a></div>
+      </div>
+      <hr className="rule" style=${{margin:'clamp(40px,6vw,80px) 0'}}/>
+      <div className="split">
+        <div><span className="eyebrow">Quality</span>
+          <h2 style=${{fontSize:'clamp(1.9rem,3.8vw,3rem)',margin:'16px 0 20px'}}>Carefully selected, consistently supplied</h2>
+          <p className="lede">Our commitment is to carefully selected products and consistent quality, order after order.</p>
+          <a className="link" href="#quality">Our approach to quality <${Arrow}/></a></div>
+        <${Photo} id="quality" className="wide zoom" alt="Selected coconut products" cap="Selected with care"/>
+      </div>
+    </div></section>
+
+    <${CtaBand} title="Coconut builds strength. Let’s build a partnership."/>
+  </main>`;
+}
+
+function About(){
+  const vals=[['Natural','We work with materials that come directly from the coconut, and we describe them as they are.'],['Local partnership','We stand alongside Indonesian producers and bring their products to international buyers.'],['Consistency','We aim to supply carefully selected products that buyers can rely on.']];
+  return html`<main>
+    <div className="ph"><div className="wrap">
+      <span className="eyebrow">About us</span>
+      <h1 style=${{marginTop:20}}>Strength from the coconut.</h1>
+      <p className="lede">Saka Klapa is the coconut-products brand of PT Saka Argo Group, an Indonesian exporter based in West Bekasi.</p>
+    </div></div>
+    <div className="wrap" style=${{paddingBottom:'clamp(48px,7vw,96px)'}}><${Photo} id="about" className="banner zoom" alt="Indonesian coconut grove" cap="Indonesian coconut grove"/></div>
+
+    <section className="s" style=${{paddingTop:0}}><div className="wrap split top">
+      <div><span className="eyebrow">Company introduction</span>
+        <h2 style=${{fontSize:'clamp(1.9rem,3.8vw,3rem)',marginTop:16}}>An Indonesian exporter for the world’s coconut buyers</h2></div>
+      <div className="intro"><p className="big">Indonesian coconut-derived products connecting local producers with buyers worldwide.</p>
+        <p style=${{color:'var(--muted)'}}>Saka Klapa, part of PT Saka Argo Group, offers coco fiber, coco dregs, coco palm sugar and coco shell charcoal. Our office is in West Bekasi, Bekasi City, Indonesia, and we welcome inquiries from importers, wholesalers, distributors and business buyers.</p></div>
+    </div></section>
+
+    <section className="s on-olive band"><div className="wrap split">
+      <div><span className="eyebrow">The brand story</span>
+        <h2 style=${{fontSize:'clamp(2rem,4.2vw,3.4rem)',margin:'16px 0 22px'}}>A name with two roots</h2>
+        <p className="lede">In Javanese, Saka means pillar and Klapa means coconut. Together they describe a coconut that holds things up, which is where our tagline comes from: ${CO.tagline}</p></div>
+      <div className="etym"><div><b>Saka</b><span>Pillar, in Javanese</span></div><div><b>Klapa</b><span>Coconut, in Javanese</span></div></div>
+    </div></section>
+
+    <section className="s"><div className="wrap">
+      <div className="pillars">
+        <div><span className="eyebrow">Vision</span><h3>Indonesian coconut, valued worldwide.</h3><p style=${{color:'var(--muted)'}}>To make Indonesian coconut-derived products a trusted choice for buyers around the world.</p></div>
+        <div><span className="eyebrow">Mission</span><h3>Connect producers and buyers.</h3><p style=${{color:'var(--muted)'}}>To bring the products of local Indonesian producers to international markets, with careful selection and consistent quality.</p></div>
+      </div>
+      <p className="note" style=${{marginTop:18}}>Vision and mission are stated in general terms here. They will be replaced with the exact wording from the company brochure once it is supplied.</p>
+    </div></section>
+
+    <section className="s alt band"><div className="wrap split">
+      <${Photo} id="aboutB" className="tall zoom" alt="Local Indonesian producers" cap="Local producers"/>
+      <div><span className="eyebrow">Local producers</span>
+        <h2 style=${{fontSize:'clamp(1.9rem,3.8vw,3rem)',margin:'16px 0 22px'}}>Built on Indonesian hands and land</h2>
+        <p className="lede">Coconut is part of everyday life and work across Indonesia. Saka Klapa works with local Indonesian producers and gives their products a route to buyers abroad.</p>
+        <a className="link" href="#sourcing">Read about our sourcing <${Arrow}/></a></div>
+    </div></section>
+
+    <section className="s"><div className="wrap">
+      <${Head} eyebrow="Company values" title="What guides the way we work"/>
+      <div className="vals">${vals.map(([t,d])=>html`<div key=${t}><h3>${t}</h3><p>${d}</p></div>`)}</div>
+    </div></section>
+    <${CtaBand} title="Talk to the Saka Klapa team."/>
+  </main>`;
+}
+
+function Products(){
+  const {manage}=useImages();
+  return html`<main>
+    <div className="ph"><div className="wrap">
+      <span className="eyebrow">Our products</span>
+      <h1 style=${{marginTop:20}}>The coconut catalogue.</h1>
+      <p className="lede">Four natural products from the Indonesian coconut. Open any product for applications, packaging and barcode details. Pricing for every product is upon request.</p>
+    </div></div>
+    <section className="s" style=${{paddingTop:'clamp(24px,3vw,40px)'}}><div className="wrap">
+      <${ManageBar}/>
+      <div className="mgrid">
+      ${PRODUCTS.map(p=>html`<div key=${p.slug} className="pc">
+        ${manage ? html`<div className="mrow">
+            <div><span className="slotlabel">Product image</span><${ImageSlot} pid=${p.slug} name=${p.name} kind="product" frame="land" fit="cover" controls=${true}/></div>
+            <div><span className="slotlabel">Barcode / label image</span><${ImageSlot} pid=${p.slug} name=${p.name} kind="label" frame="lbl" fit="contain" controls=${true}/></div>
+          </div>`
+          : html`<a className="zoom" href=${'#products-'+p.slug} aria-label=${'View '+p.name} style=${{display:'block'}}><${ImageSlot} pid=${p.slug} name=${p.name} kind="product" frame="land" fit="cover"/></a>`}
+        <span className="tag">${p.tag}</span><h3 style=${{fontSize:'2.1rem'}}>${p.name}</h3><p>${p.short}</p>
+        <div className="chips">${p.apps.map(a=>html`<span className="chip" key=${a}>${a}</span>`)}</div>
+        <div style=${{display:'flex',gap:14,alignItems:'center',flexWrap:'wrap',marginTop:6}}>
+          <span className="price">Price Upon Request</span>
+          <a className="btn" href=${'#products-'+p.slug} style=${{padding:'12px 18px'}}>View details</a>
+          <button className="btn ghost" style=${{padding:'12px 18px'}} onClick=${()=>inquire(p.name)}>Inquire</button>
+        </div></div>`)}
+      </div>
+    </div></section>
+    <${CtaBand} title="Looking for something specific?" text="Tell us about your product requirements and we will get back to you with what is available."/>
+  </main>`;
+}
+
+function ProductDetail({p}){
+  const {manage}=useImages();
+  const i=PRODUCTS.indexOf(p), prev=PRODUCTS[(i+PRODUCTS.length-1)%PRODUCTS.length], next=PRODUCTS[(i+1)%PRODUCTS.length];
+  return html`<main>
+    <section className="s" style=${{paddingBlock:'clamp(36px,5vw,72px)'}}><div className="wrap split top">
+      <div><${ImageSlot} pid=${p.slug} name=${p.name} kind="product" frame="land" fit="contain" controls=${manage} zoomable=${true}/></div>
+      <div>
+        <div className="crumb"><a href="#home">Home</a> / <a href="#products">Products</a> / ${p.name}</div>
+        <span className="eyebrow">${p.tag}</span>
+        <h1 style=${{fontSize:'clamp(2.5rem,5.6vw,4.6rem)',fontWeight:300,margin:'14px 0 22px'}}>${p.name}</h1>
+        <p className="lede">${p.long}</p>
+        <dl className="spec" style=${{margin:'34px 0 0'}}>
+          <div><dt>Key ingredient</dt><dd>${p.ingredients}</dd></div>
+          <div><dt>Applications</dt><dd><div className="chips">${p.apps.map(a=>html`<span className="chip" key=${a}>${a}</span>`)}</div></dd></div>
+          <div><dt>Origin</dt><dd>Indonesia</dd></div>
+          <div><dt>Pricing</dt><dd><span className="price">Price Upon Request</span></dd></div>
+        </dl>
+        <div style=${{display:'flex',gap:14,flexWrap:'wrap',marginTop:34}}>
+          <button className="btn" onClick=${()=>inquire(p.name)}>Request a Quote <${Arrow}/></button>
+          <a className="btn ghost" href=${'https://wa.me/'+CO.waNumber+'?text='+encodeURIComponent('Hello Saka Klapa, I would like to ask about '+p.name+'.')} target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </div></section>
+
+    <section className="s alt band"><div className="wrap pack">
+      <div><span className="eyebrow">Packaging and barcode</span>
+        <h2 style=${{fontSize:'clamp(1.9rem,3.6vw,2.8rem)',margin:'16px 0 20px'}}>${p.name} label</h2>
+        <p className="lede">A sample barcode label is shown for demonstration. It is shared across products and is not a registered or scannable product code. Select the image to see it at full size.</p>
+        ${manage ? html`<div style=${{marginTop:28}}><${ManageBar}/></div>` : null}</div>
+      <${ImageSlot} pid=${p.slug} name=${p.name} kind="label" frame="lbl" fit="contain" controls=${manage} zoomable=${true}/>
+    </div></section>
+
+    <section className="s" style=${{paddingBlock:'clamp(36px,5vw,64px)'}}><div className="wrap pnav">
+      <a href=${'#products-'+prev.slug}><small>← Previous</small>${prev.name}</a>
+      <a href="#products" style=${{textAlign:'center'}}><small>All</small>Catalogue</a>
+      <a href=${'#products-'+next.slug} style=${{textAlign:'right'}}><small>Next →</small>${next.name}</a>
+    </div></section>
+  </main>`;
+}
+
+function Sourcing(){
+  const steps=[['The husk','Fibrous husk is taken from the coconut and supplied as coco fiber.'],['The pulp','Pulp residue is supplied as coco dregs.'],['The sap','Sap from the coconut palm is made into coco palm sugar.'],['The shell','Hard coconut shell is made into coco shell charcoal.']];
+  return html`<main>
+    <div className="ph"><div className="wrap">
+      <span className="eyebrow">Our sourcing</span>
+      <h1 style=${{marginTop:20}}>From Indonesian palms to your port.</h1>
+      <p className="lede">Saka Klapa connects local Indonesian coconut producers with buyers worldwide.</p>
+    </div></div>
+    <div className="wrap"><${Photo} id="plantation" className="banner zoom" alt="Coconut plantation" cap="Coconut plantation" /></div>
+    <section className="s"><div className="wrap split top">
+      <div><span className="eyebrow">Local connection</span><h2 style=${{fontSize:'clamp(1.9rem,3.8vw,3rem)',marginTop:16}}>Working with Indonesian farmers and producers</h2></div>
+      <div className="intro"><p className="big">Our products begin with the people who grow and process coconut in Indonesia.</p>
+        <p style=${{color:'var(--muted)'}}>As part of PT Saka Argo Group, Saka Klapa works with local Indonesian producers and brings their coconut-derived products to buyers abroad. Details on specific producers and regions are shared with business partners on request.</p></div>
+    </div></section>
+    <section className="s alt band"><div className="wrap">
+      <${Head} eyebrow="One coconut, four materials" title="Every part of the coconut has a use"/>
+      <div className="steps">${steps.map(([t,d])=>html`<div className="step" key=${t}><h3>${t}</h3><p>${d}</p></div>`)}</div>
+    </div></section>
+    <section className="s"><div className="wrap split">
+      <${Photo} id="sourcingB" className="wide zoom" alt="Raw coconut materials" cap="Raw materials"/>
+      <div><span className="eyebrow">Raw materials</span><h2 style=${{fontSize:'clamp(1.9rem,3.8vw,3rem)',margin:'16px 0 20px'}}>Natural materials, carefully selected</h2>
+        <p className="lede">We select what we supply with care, so that buyers receive products that match what they ordered.</p>
+        <a className="link" href="#quality">Our approach to quality <${Arrow}/></a></div>
+    </div></section>
+    <${CtaBand} title="Interested in sourcing Indonesian coconut products?"/>
+  </main>`;
+}
+
+function Quality(){
+  const pts=[['Careful selection','We choose the products we supply with care, so the range stays focused and dependable.'],['Consistent quality','Our aim is for each order to match the one before it, so buyers know what to expect.'],['Clear communication','Tell us your requirements. We will respond with the information available for your product.']];
+  return html`<main>
+    <div className="ph"><div className="wrap">
+      <span className="eyebrow">Quality assurance</span>
+      <h1 style=${{marginTop:20}}>Selected with care. Supplied consistently.</h1>
+      <p className="lede">Our commitment is to carefully selected products and consistent quality.</p>
+    </div></div>
+    <div className="wrap"><${Photo} id="quality" className="banner zoom" alt="Selected coconut products" cap="Selected with care"/></div>
+    <section className="s"><div className="wrap">
+      <${Head} eyebrow="Our commitment" title="What buyers can expect from us"/>
+      <div className="vals">${pts.map(([t,d])=>html`<div key=${t}><h3>${t}</h3><p>${d}</p></div>`)}</div>
+    </div></section>
+    <section className="s alt band"><div className="wrap split top">
+      <div><span className="eyebrow">Product information</span><h2 style=${{fontSize:'clamp(1.9rem,3.8vw,3rem)',marginTop:16}}>Ask us about your requirements</h2></div>
+      <div className="intro"><p className="big">Specifications, packaging and documentation depend on the product and your market.</p>
+        <p style=${{color:'var(--muted)'}}>Send us an inquiry with the product, the quantity and any requirements your business has. We will tell you what we can provide.</p>
+        <a className="link" href="#quote">Request a quote <${Arrow}/></a></div>
+    </div></section>
+    <${CtaBand} title="Consistent quality starts with a conversation."/>
+  </main>`;
+}
+
+function Contact(){
+  const [c,setC]=useState('');
+  async function copy(t,k){ try{ await navigator.clipboard.writeText(t); setC(k); setTimeout(()=>setC(''),2000);}catch(e){ setC('manual'); } }
+  return html`<main>
+    <div className="ph"><div className="wrap">
+      <span className="eyebrow">Contact us</span>
+      <h1 style=${{marginTop:20}}>Let’s talk coconut.</h1>
+      <p className="lede">Reach the Saka Klapa team by WhatsApp or email, or send a business inquiry below.</p>
+    </div></div>
+    <section className="s" style=${{paddingTop:'clamp(16px,3vw,40px)'}}><div className="wrap split top">
+      <div className="contact-list">
+        <div><small>WhatsApp</small><div className="v">${CO.waDisplay}</div>
+          <a className="cbtn" href=${'https://wa.me/'+CO.waNumber} target="_blank" rel="noopener">Open WhatsApp</a>
+          <button className="cbtn" onClick=${()=>copy(CO.waDisplay,'wa')}>${c==='wa'?'Copied':'Copy number'}</button></div>
+        <div><small>Email</small><div className="v">${CO.email}</div>
+          <a className="cbtn" href=${'mailto:'+CO.email}>Write an email</a>
+          <button className="cbtn" onClick=${()=>copy(CO.email,'em')}>${c==='em'?'Copied':'Copy address'}</button></div>
+        <div><small>Location</small><div className="v">${CO.location}</div></div>
+      </div>
+      <div><h2 style=${{fontSize:'clamp(1.7rem,3vw,2.4rem)',marginBottom:26}}>Business inquiry</h2><${InquiryForm} idp="c"/></div>
+    </div></section>
+  </main>`;
+}
+
+function Quote(){
+  return html`<main>
+    <div className="ph"><div className="wrap">
+      <span className="eyebrow">Request a quote</span>
+      <h1 style=${{marginTop:20}}>Tell us what you need.</h1>
+      <p className="lede">Share your product of interest and estimated quantity. Prices are provided on request.</p>
+    </div></div>
+    <section className="s" style=${{paddingTop:'clamp(16px,3vw,40px)'}}><div className="wrap split top">
+      <div style=${{maxWidth:760}}><${InquiryForm} idp="q"/></div>
+      <aside className="contact-list">
+        <div><small>Prefer to write directly?</small><div className="v" style=${{fontSize:'1.35rem'}}>${CO.email}</div></div>
+        <div><small>WhatsApp</small><div className="v" style=${{fontSize:'1.35rem'}}>${CO.waDisplay}</div></div>
+        <div><small>Pricing</small><div className="v" style=${{fontSize:'1.35rem'}}>Price Upon Request</div></div>
+      </aside>
+    </div></section>
+  </main>`;
+}
+
+/* ---------- App ---------- */
+function App(){
+  const [route,setRoute]=useState(parse());
+  const [zoomItem,setZoomItem]=useState(null);
+  useEffect(()=>{
+    const on=()=>{ setZoomItem(null); setRoute(parse()); window.scrollTo({top:0,behavior:'auto'}); };
+    window.addEventListener('hashchange',on); return ()=>window.removeEventListener('hashchange',on);
+  },[]);
+  useEffect(()=>{
+    const p = PRODUCTS.find(x=>'products-'+x.slug===route);
+    const m = p ? [p.name+' | Saka Klapa', p.long] : META[route];
+    document.title=m[0];
+    let el=document.querySelector('meta[name="description"]'); if(el) el.setAttribute('content',m[1]);
+  },[route]);
+  const p = PRODUCTS.find(x=>'products-'+x.slug===route);
+  let page;
+  if(p) page=html`<${ProductDetail} p=${p}/>`;
+  else page = {home:html`<${Home}/>`,about:html`<${About}/>`,products:html`<${Products}/>`,sourcing:html`<${Sourcing}/>`,quality:html`<${Quality}/>`,contact:html`<${Contact}/>`,quote:html`<${Quote}/>`}[route];
+  return html`<${ZoomCtx.Provider} value=${setZoomItem}><${Header} route=${route}/><div key=${route}>${page}</div><${Footer}/><${Lightbox} item=${zoomItem} onClose=${()=>setZoomItem(null)}/><//>`;
+}
+ReactDOM.createRoot(document.getElementById('root')).render(html`<${App}/>`);
+</script>
+
+</body></html>
